@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
     const SidebarLeft = ({ tweetObj }) => {
       let navigate = useNavigate();
         return (
-          <div>
-          <a onClick={() => {navigate("/twitter/" + {tweetObj})}}>
+          <div className="left-sidebar">
+          <a onClick={() => {navigate("/twitter/" + tweetObj)}}>
             <div className="sidebar-icon-group">
               <FontAwesomeIcon icon={faHome} className="home-icon sidebar-icon"/>
               <span className="sidebar-icon-label">Home</span>
@@ -18,43 +18,43 @@ import { useNavigate } from "react-router-dom";
           </a>
           <a href="/Hashtag">
             <div className="sidebar-icon-group">
-              <FontAwesomeIcon icon={faHashtag} className="home-icon sidebar-icon"/>
+              <FontAwesomeIcon icon={faHashtag} className="hashtag-icon sidebar-icon"/>
               <span className="sidebar-icon-label">Explore</span>
             </div>
           </a>
           <a href="/Bell">
             <div className="sidebar-icon-group">
-              <FontAwesomeIcon icon={faBell} className="home-icon sidebar-icon"/>
+              <FontAwesomeIcon icon={faBell} className="bell-icon sidebar-icon"/>
               <span className="sidebar-icon-label">Notifications</span>
             </div>
           </a>
           <a href="/Envelope">
             <div className="sidebar-icon-group">
-              <FontAwesomeIcon icon={faEnvelope} className="home-icon sidebar-icon"/>
+              <FontAwesomeIcon icon={faEnvelope} className="envelope-icon sidebar-icon"/>
               <span className="sidebar-icon-label">Messages</span>
             </div>
           </a>
           <a href="/Bookmark">
             <div className="sidebar-icon-group">
-              <FontAwesomeIcon icon={faBookmark} className="home-icon sidebar-icon"/>
+              <FontAwesomeIcon icon={faBookmark} className="bookmark-icon sidebar-icon"/>
               <span className="sidebar-icon-label">Bookmarks</span>
             </div>
           </a>
           <a href="/Lines">
             <div className="sidebar-icon-group">
-              <FontAwesomeIcon icon={faFileLines} className="home-icon sidebar-icon"/>
+              <FontAwesomeIcon icon={faFileLines} className="lines-icon sidebar-icon"/>
               <span className="sidebar-icon-label">Lists</span>
             </div>
           </a>
           <a href="/User">
             <div className="sidebar-icon-group">
-              <FontAwesomeIcon icon={faUser} className="home-icon sidebar-icon"/>
+              <FontAwesomeIcon icon={faUser} className="user-icon sidebar-icon"/>
               <span className="sidebar-icon-label">Profile</span>
             </div>
           </a>
           <a href="/Ellipses">
             <div className="sidebar-icon-group">
-              <FontAwesomeIcon icon={faEllipsis} className="home-icon sidebar-icon"/>
+              <FontAwesomeIcon icon={faEllipsis} className="ellipses-icon sidebar-icon"/>
               <span className="sidebar-icon-label">More</span>
             </div>
           </a>

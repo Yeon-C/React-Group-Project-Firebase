@@ -11,7 +11,6 @@ import SidebarRight from "./SidebarRight";
 
 const TwitterPage = () => {
   let { user } = useParams();
-
   const [tweets, setTweets] = useState([]);
 
   useEffect(() => {
@@ -28,13 +27,13 @@ const TwitterPage = () => {
     <div>
       <div className="container columns">
         <div className="row ">
-          <div className="col-md-1 col-l-3 col-xl-3 column column-left">
+          <div className="col-12 col-sm-12 col-md-1 col-l-3 col-xl-3 column column-left">
             <a href="/">
               <FontAwesomeIcon icon={faTwitter} className="twitter-icon" />
             </a>
             <SidebarLeft tweetObj={user} />
           </div>
-          <div className="col-sm-12 col-md-11 col-l-6 col-xl-6 column">
+          <div className="col-12 col-sm-12 col-md-11 col-l-6 col-xl-6 column">
             <div className="card tweet-container">
               <Form tweetObj={user} />
               <div>
@@ -44,7 +43,7 @@ const TwitterPage = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-12 col-l-3 col-xl-3 column column-right">
+          <div className="col-12 col-sm-12 col-md-12 col-l-3 col-xl-3 column column-right">
             <SidebarRight />
           </div>
         </div>
